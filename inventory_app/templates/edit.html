@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Edit Inventory{% endblock %}
+{% block content %}
+
+<h3>Edit Inventory</h3>
+<div class = "container-fluid"></div>
+<form action="#" method="post">
+    <label for="item_name" class="form-label">Item Name</label>
+    <input class = "form-control form-control-lg" type="text" item="rename" name="rename" placeholder="Enter Rename">
+    <label for="inventory" class="form-label">Inventory Count</label>
+    <input class = "form-control form-control-lg" type="number" item="recount" name="recount" placeholder="Enter Recount">
+    <br />
+    <button type="submit" value="submit">Submit</button>
+</form>
+</div>
+
+{% endblock %}
