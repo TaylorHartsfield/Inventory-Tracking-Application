@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template, request, session, redirect, url_for, flash
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 
@@ -21,7 +21,7 @@ class Inventory(db.Model):
         self.count = count
         self.date = date_posted
         self.shipment = shipment
-        
+
 @app.route('/')
 def home():
     return render_template('home.html')
