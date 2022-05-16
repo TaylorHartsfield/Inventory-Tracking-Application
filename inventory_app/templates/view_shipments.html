@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %} View Shipments {% endblock %}
+
+{% block content %}
+<br />
+<h1 style="text-align:center">View Shipment Inventory</h1>
+    <table class="table table-hover">
+    <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Item Name</th>
+          <th scope="col">Inventory Count</th>
+          <th scope="col">Date Entered/Edited</th>
+          <th scope="col">Shipment Destination</th>
+        </tr>
+      </thead>
+      {% for items in shipments %}
+      <tbody>
+        <tr>
+          <th scope="row">{{items._id}}</th>
+          <td>{{items.name}}</td>
+          <td>{{items.count}}</td>
+          <td>{{items.date_posted}}</td>  
+          <td>{{items.shipment}}</td>
+          <td>
+       {% endfor %}       
+{% endblock %}
