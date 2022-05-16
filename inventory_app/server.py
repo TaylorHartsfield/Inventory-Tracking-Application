@@ -16,7 +16,7 @@ class Inventory(db.Model):
     date_posted = db.Column(db.DateTime, default=datetime.now())
     shipment = db.Column(db.String(1000))
 
-    def __init__(self, name, count, date_posted, shipment="Not Assigned"):
+    def __init__(self, name, count, date_posted, shipment):
         self.name = name
         self.count = count
         self.date = date_posted
@@ -25,6 +25,24 @@ class Inventory(db.Model):
 @app.route('/')
 def home():
     return render_template('home.html')
+
+@app.route('/add', methods=['GET', 'POST'])
+def add():
+    if request.method == "POST":
+        item = request.form['name']
+        count = request.form['count']
+        date = datetime.now()
+        shipment = "Not Assigned"
+        session['item'] = item
+    
+        #add item to DB and view
+        flash('Item Added Successfully')
+        item = Inventory(item, count, date, shipment)
+        db.session.add(item)
+        db.session.commit()
+        return redirect(url_for('view'))
+        
+    return render_template("add.html")
 
 if __name__ == '__main__':
     app.run(debug=True)

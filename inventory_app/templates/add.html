@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %} Add Inventory {% endblock %}
+{% block content%}
+<div class = "container-fluid"></div>
+<form action="#" method="post">
+    <label for="item_name" class="form-label">Item Name</label>
+    <input class = "form-control form-control-lg" type="text" item="name" name="name" placeholder="Item Name" required>
+    <label for="inventory" class="form-label">Inventory Count</label>
+    <input class = "form-control form-control-lg" type="number" item="count" name="count" placeholder="Inventory Count" required>
+    <br />
+    <button type="submit" value="submit">Submit</button>
+</form>
+</div>
+{% endblock %}
