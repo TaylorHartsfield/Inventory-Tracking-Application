@@ -5,6 +5,7 @@ This is an inventory tracking application built for the Backend Shopify Internsh
 # Run Application
 This application has been configured to run on Replit. You can access it here:
 [https://replit.com/@TaylorMay093/ShopifyNix#.replit](https://replit.com/@TaylorMay093/ShopifyNix#.replit)
+NOTE: You may need to hit the run button twice to get the application to start. This is a bug I am working on with Replit!
 
 
 # About
