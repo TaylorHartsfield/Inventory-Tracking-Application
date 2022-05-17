@@ -3,13 +3,15 @@ Hey there! Thank you for reviewing my application.
 This is an inventory tracking application built for the Backend Shopify Internship Application for Fall 2022
 
 # Run Application
-This application has been configured to run on Replit. You can access it here from Replit here:
-[https://replit.com/@TaylorMay093/ShopifyNix#.replit](https://replit.com/@TaylorMay093/ShopifyNix#.replit)
-Or directly in your browswer from here:
-https://shopifynix--taylormay093.repl.co/
+This application has been configured to run on Replit. 
 
-From this link - you can click on "Open Website" to view the project on a full screen. 
+You can assess the webpage directly from your browser here: https://shopifynix--taylormay093.repl.co/
 
+You can access it here from Replit here:
+https://replit.com/@TaylorMay093/ShopifyNix#.replit
+
+This application is viewable and interactable from either a desktop or mobible device.
+ 
 
 # About
 This application features basic CRUD functionality and the ability to create a shipment, add inventory to those shipments, and update the main warehouse inventory accordingly. 
