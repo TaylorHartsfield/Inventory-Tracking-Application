@@ -1,6 +1,6 @@
-# ShopifyInternApplicationApp
+# Inventory Tracking Application
 Hey there! Thank you for reviewing my application. 
-This is an inventory tracking application built for the Backend Shopify Internship Application for Fall 2022
+This is an inventory tracking application built for the Backend Shopify Internship Application for Fall 2022. Since this build, I have learned so much more and am working on optimizing this code for a better user experience. You will soon be able to view a new repo showing the growth I have made in a just a couple of months.
 
 # Run Application
 This application has been configured to run on Replit. 
